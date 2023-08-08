@@ -1,0 +1,171 @@
+@charset "UTF-8";
+
+/*Typical Device Breakpoints
+-------------------------------------
+Pequenas telas:(max-width: 600px);
+Celular:(min-width: 600px);
+Tablet/iPad: (min-width: 768px);
+Desktop: (min-width: 992px);
+Grandes telas: (min-width: 1200px);
+-------------------------------------
+*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: 'brbad';
+    src: url(../fonts/breaking-bad.otf) format('opentype'); 
+    
+}
+
+:root{
+    --cor0:#0F1F0F;
+    --cor1:#2C382C;
+    --cor2:#546B54;
+    --cor3:#336B33;
+    --cor4:#418741; 
+}
+
+body{
+    background-color: rgb(15, 31, 15);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    margin-top: 10px;
+    padding-top: 20px;
+    text-align: center;
+    color: White;
+    margin-bottom: 20px;
+}
+
+header > h1{
+    font-family: 'brbad';
+    font-size: 72px;
+    font-weight: normal;
+}
+
+header > h2{
+    font-size: 1.2em;
+}
+
+span#list{
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(34, 71, 34);
+    color: black;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+}
+
+span#list:hover{
+    color: white;
+}
+
+nav{
+    display: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav > ul{
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+nav > ul > li > a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgba(26, 44, 26, 0.781);
+    color: #86c086;
+    border: 2px solid black;
+}
+
+nav > ul > li > a:hover{
+    color: white;
+}
+
+main{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 90vw;
+    background-color: lightgray;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+main > article > img{
+    display: block;
+    margin: auto;
+    padding: 10px;
+    width: 85%;
+}
+
+article > h3{
+    margin-top: 10px;
+    padding: 10px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+article > h4{
+    text-align: center;
+    padding-top: 15px;
+    margin-bottom: 5px;
+}
+
+div#conteiner{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+div#conteiner > a img{
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.555);
+    box-sizing: border-box;
+}
+
+div#conteiner > a img:hover{
+    border: 2px solid white;
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.61);
+    transition: transform 0.5s;
+}
+
+aside{
+    margin: 10px;
+    padding: 10px;
+    background-color: gray;
+    border-radius: 10px;
+}
+
+aside > h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+aside > ul{
+    list-style-type: '\2714\00a0\00a0';
+    list-style-position: inside;
+    columns: 2;
+}
+
+footer{
+    margin-top: 20px;
+    margin-bottom: 0px;
+    background-color: darkgray;
+    text-align: center;
+    border-radius: 5px 5px 0px 0px;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+}

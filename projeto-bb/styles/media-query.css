@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/*Typical Device Breakpoints
+-------------------------------------
+Pequenas telas:(max-width: 600px);
+Celular:(min-width: 600px);
+Tablet/iPad: (min-width: 768px);
+Desktop: (min-width: 992px);
+Grandes telas: (min-width: 1200px);
+-------------------------------------
+*/
+
+@media screen and (min-width: 768px){    
+    span#list{
+        display: none;
+    }
+
+    nav{
+        display: block;
+        background-color: rgb(34, 71, 34);
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+    
+    nav > ul > li{
+        display: inline-block;
+    }
+
+    main{
+        width: 768px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    aside{
+        display: block;
+        margin: auto;
+        width: 768px;
+    }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Breaking Bad</title>
+    <link rel="stylesheet" href="../projeto-bb/styles/style.css">
+    <link rel="stylesheet" href="../projeto-bb/styles/media-query.css">
+    <link rel="shortcut icon" href="../projeto-bb/icons/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>1riosidades sobre 5eaking 6d</h1>
+        <h2>Fique por dentro de tudo sobre Breaking Bad</h2>
+    </header>
+    <span class="material-symbols-outlined" id="list" onclick="clickMenu()">menu</span>
+    <nav id="itens">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="news.html">Notícias</a></li>
+            <li><a href="about.html">Sobre</a></li>
+            <li><a href="contacts.html">Contato</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <article>
+            <h1 style="text-align: center; padding-bottom: 15px;">Entre em contato conosco</h1>
+            <div id="conteiner">
+                <a href="https://github.com/RamomSouza07" target="_blank"><img src="images/github.png" alt=""></a>
+                <a href="http://https://twitter.com/ramomsouza_07" target="_blank" rel="noopener noreferrer"><img src="images/x-twitter.png" alt=""></a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 - Portal Breaking Bad</p>
+    </footer>
+    <script>
+        function mudouTamanho(){
+            if (window.innerWidth > 768)
+            {itens.style.display='block'}
+            else {itens.style.display = 'none'}
+        }
+
+        function clickMenu(){
+            if(itens.style.display == 'block')
+            {itens.style.display ='none'}
+            else{itens.style.display = 'block'}
+        }
+    </script>
+</body>
+</html>

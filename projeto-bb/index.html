@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Breaking Bad</title>
+    <link rel="stylesheet" href="../projeto-bb/styles/style.css">
+    <link rel="stylesheet" href="../projeto-bb/styles/media-query.css">
+    <link rel="shortcut icon" href="../projeto-bb/icons/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>1riosidades sobre 5eaking 6d</h1>
+        <h2>Fique por dentro de tudo sobre Breaking Bad</h2>
+    </header>
+    <span class="material-symbols-outlined" id="list" onclick="clickMenu()">menu</span>
+    <nav id="itens">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="news.html">Notícias</a></li>
+            <li><a href="about.html">Sobre</a></li>
+            <li><a href="contacts.html">Contato</a></li>
+        </ul>
+    </nav>
+    <main>
+        <article>
+            <h3>Sinopse</h3>
+            <p>Breaking Bad é uma série de televisão americana criada e produzida por Vince Gilligan. Ela retrata a vida do químico Walter White, um homem brilhante frustrado em dar aulas para adolescentes do ensino médio enquanto lida com um filho sofrendo de paralisia cerebral, uma esposa grávida e dívidas intermináveis. White, então, é diagnosticado com um câncer no pulmão - o que o leva a sofrer um colapso emocional e abraçar uma vida de crimes para pagar suas dívidas hospitalares e dar uma boa vida aos seus filhos. Walter resolve produzir metanfetamina de alta pureza com seu ex-aluno, Jesse Pinkman.</p>
+            <img src="images/breaking-bad.jpg" alt="">
+            
+            <h3>Mais sobre a série</h3>
+            <p>Breaking Bad se passa em Albuquerque, Novo México, e gira em torno das escolhas de seu protagonista, as quais o levam a uma intensa, dolorosa e inevitável transformação. Amplamente considerada como uma das melhores séries da história, ao seu final, foi um dos programas da televisão a cabo mais assistidos nos Estados Unidos, recebendo inúmeros prémios, incluindo dezesseis Primetime Emmy Awards, oito Satellite Awards, dois Globos de Ouro e um Prémio Escolha Popular. Em 2014, entrou para o Livro dos Recordes como o seriado mais bem avaliado de todos os tempos pela crítica.</p>
+            <img src="images/premios.jpg" alt="">
+
+            <h3>Curiosidades</h3>
+            <h4>Elementos Químicos</h4>
+            <p>Na introdução da série, é mostrado várias vezes a fórmula química C<sub>10</sub>H<sub>15</sub>N e o número 149.24. Esses números representam, respectivamente, a fórmula química e a massa molar da metanfetamina, droga principal da série.</p>
+            <img src="images/intro-bb.jpg" alt="">
+            
+            <h4>Teoria das Cores</h4>
+            <p>Breaking Bad possui uma forte ligação com as cores durante as cenas. O criador da série, Vince Gilligan, fez com que cada cor trouxe-se um sentimento ou emoção pras cenas e personagens, como o Walter White, o branco é a junção de todas as cores dando a entender que o personagem irá passar por diversas emoções durante a série. Uma cor muito presente na série é a cor verde, muito utilizada pelo Walter, que representa a ganância e o dinheiro.</p>
+            <img src="images/walter-white-cores.png" alt="">
+            </article>
+    </main>
+    <aside>
+        <h3>Conheça mais sobre o elenco da Série</h4>
+        <ul>
+            <li><abbr title="Walter White">Bryan Cranston</abbr></li>
+            <li><abbr title="Jesse Pinkman">Aaron Paul</abbr></li>
+            <li><abbr title="Skyler White">Anna Gunn</abbr></li>
+            <li><abbr title="Walter White Jr.">RJ Mitte</abbr></li>
+            <li><abbr title="Hank Schrader">Dean Norris</abbr></li>
+            <li><abbr title="Mike Ehrmantraut">Jonathan Banks</abbr></li>
+            <li><abbr title="Saul Goodman">Bob Odenkirk</abbr></li>
+            <li><abbr title="Gustavo Fring">Giancarlo Esposito</abbr></li>
+        </ul>
+    </aside>
+        
+    <footer>
+        <p>&copy; 2023 - Portal Breaking Bad</p>
+    </footer>
+    <script>
+        function mudouTamanho(){
+            if (window.innerWidth > 768)
+            {itens.style.display='block'}
+            else {itens.style.display = 'none'}
+        }
+
+        function clickMenu(){
+            if(itens.style.display == 'block')
+            {itens.style.display ='none'}
+            else{itens.style.display = 'block'}
+        }
+    </script>
+</body>
+</html>
