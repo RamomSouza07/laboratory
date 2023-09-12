@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeinsenBurger</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media-query.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body onresize="mudarTamanho()">
+    <header>
+        <h1>HeinsenBurger</h1>
+        <h2>Adquira já o seu!</h2> 
+    </header>
+    <span class="material-symbols-outlined" id="list" onclick="clickMenu()">menu</span>    
+    <nav id="menu">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="pages/local.html">Local</a></li>
+            <li><a href="pages/contact.html">Contato</a></li>
+            <li><a href="pages/about.html">Sobre Nós</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h3>Conheça mais sobre nossos lanches</h3>
+        <article class="intro"> 
+            <section>
+                <p>Os hambúrgueres da HeisenBurguer, são feitos com elementos quimicamente selecionados, para que nossos clientes possam sentir uma explosão de sabores.</p>
+            </section>
+        </article>
+
+        <article>
+            <section>
+                <div>
+                    <p>Heinsenberg</p>
+                    <img src="imagens/burguer.png" alt="Heinsenberg">
+                </div>
+            </section>
+            <section id="ingredientes">
+                <span>Ingredientes:</span>
+                <ul>
+                    <li>Pão de Hambúrguer</li>
+                    <li>Blend Bovino</li>
+                    <li>Bacon</li>
+                    <li>Cebola Caramelizada</li>
+                    <li>Queijo Cheddar</li>
+                    <li>Baiconese</li>
+                </ul>
+                <span id="preco">R$15,00</span>
+            </setion>
+        </article>
+
+        <article>
+            <section>
+                <div>
+                    <p>Jessie Pinkman</p>
+                    <img src="imagens/burguer 2.png" alt="Walter White">
+                </div>
+            </section>
+            <setion id="ingredientes">
+                Ingredientes:
+                <ul>
+                    <li>Pão de Gergelim</li>
+                    <li>Blend Bovino</li>
+                    <li>Tomate</li>
+                    <li>Alface</li>
+                    <li>Queijo Cheddar</li>
+                    <li>Baiconese</li>
+                </ul>
+                <p>R$16,00</p>
+            </setion>
+        </article>
+
+        <article>
+            <section>
+                <div>
+                    <p>Saul Goodman</p>
+                    <img src="imagens/burguer 3.png" alt="Jessie Pinkman">
+                </div>
+            </section>
+            <setion id="ingredientes">
+                Ingredientes:
+                <ul>
+                    <li>Pão de Gergelim</li>
+                    <li>2 Blend Bovino</li>
+                    <li>Bacon</li>
+                    <li>Alface</li>
+                    <li>Tomate</li>
+                    <li>Queijo Cheddar</li>
+                    <li>Queijo Mussarela</li>
+                    <li>Baiconese</li>
+                </ul>
+                <p>R$20,00</p>
+            </setion>
+        </article>
+
+        <article>
+            <section>
+                <div>
+                    <p>Mike Ehrmantraut</p>
+                    <img src="imagens/burguer 4.png" alt="Hamburguer Heinsen">
+                </div>
+            </section>
+            <setion id="ingredientes">
+                Ingredientes:
+                <ul>
+                    <li>Pão de Gergelim</li>
+                    <li>Blend Bovino</li>
+                    <li>Picles de Pepino</li>
+                    <li>Alface</li>
+                    <li>Tomate</li>
+                    <li>Queijo Cheddar</li>
+                </ul>
+                <p>R$13,00</p>
+            </setion>
+        </article>
+
+        <article>
+            <section>
+                <div>
+                    <p>Gustavo Fring</p>
+                    <img src="imagens/burguer 5.jpg" alt="Hamburguer Heinsen">
+                </div>
+            </section>
+            <setion id="ingredientes">
+                Ingredientes:
+                <ul>
+                    <li>Pão de Gergelim</li>
+                    <li>Blend de Frango</li>
+                    <li>Cebola</li>
+                    <li>Alface</li>
+                    <li>Tomate</li>
+                    <li>Queijo Cheddar</li>
+                    <li>Maionese</li>
+                </ul>
+                <p>R$15,00</p>
+            </setion>
+        </article>      
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 - Direitos reservados para HeinsenBurger</p>
+    </footer>
+    <script>
+        function mudarTamanho(){
+            if (window.innerWidth > 768){
+                menu.style.display='block'
+            }
+            else{
+                menu.style.display = 'none'
+            }
+        }
+
+        function clickMenu(){
+            if(menu.style.display == 'block'){
+                menu.style.display = 'none'
+            }
+            else{
+                menu.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
