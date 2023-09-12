@@ -13,6 +13,6 @@ $contador = isset($_COOKIE['contador']) ? $_COOKIE['contador'] : 0;
 <body>
     <h1>Contador de Cliques</h1>
     <p>Quantidade de Cliques: <?php echo $contador; ?></p>
-    <a href="index.html">Voltar</a>
+    <a href="contador.html">Voltar</a>
 </body>
 </html>
